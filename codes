@@ -1,0 +1,645 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //durmus can caliskan 19040181034
+    int harf;
+    int boyut,i,j;
+    printf("boyutu giriniz :");
+    scanf("%d",&boyut);
+    {
+
+
+
+        printf("isminiz bittiyse 30 a bitmediyse 1 e basiniz \n\n:");
+        scanf("%d",&harf);
+printf(" A=1  B=2  C=3  C,=4  D=5  E=6  F=7  G=8  G`=9  H=10\nI=11  I`=12  J=13  K=14  L=15  M=16  N=17  O=18  O`=19  P=20\n R=21  S=22  S,=23  T=24  U=25  U`=26  V=27  Y=28  Z=29\n\n\n");
+
+        for(harf==1;harf<30;harf++)
+        {
+            printf("harfe karsilik gelen sayiyi giriniz : \n");
+printf("isminiz bittiyse 30 a basiniz : \n Tum harfleri gormek icin A ya basiniz\n");
+            scanf("%d",&harf);
+
+            if(harf==1)
+            {
+
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if(i==0||i==boyut/2||j==0||j==boyut-1)
+                        {
+                            if(i==0&&(j==0||j==boyut-1))
+                            {
+                                printf(" ");
+                            }
+                            else
+                                printf("*");
+                        }
+
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==2)
+
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(j==boyut/2&&(i==0||i==boyut/2||i==boyut-1))
+                        {
+                            printf(" ");
+                        }
+                        else if(j==0 ||(i==0&&j<boyut/2+1)||(i==boyut/2&&j<boyut/2+1)||i==boyut-1&&j<boyut/2+1||j==boyut/2)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==3)
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if(j==0&&(i==0||i==boyut-1))
+                        {
+                            printf(" ");
+                        }
+                        else if(i==0||j==0||i==boyut-1)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+
+            }
+
+            if(harf==4)
+
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if(j==0&&(i==0||i==boyut-1||i==boyut-2))
+                        {
+                            printf(" ");
+                        }
+                        else if(i==0||j==0||i==boyut-2||(i==boyut-1&&j==boyut/2))
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+
+            if(harf==5)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(j==0 ||(i==0&&j<boyut/2+1)||(i+j-boyut/2==boyut-1)||(i==j-boyut/2)||(i==boyut-1&&j<boyut/2+1))
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==6)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(j==0 ||i==0||i==boyut/2||i==boyut-1)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==7)
+            {
+
+
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(j==0 ||i==0||(i==boyut/2&&j<7))
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+
+            if(harf==8)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(j==0&&(i==0||i==boyut-1)||(i==boyut-1&&j==boyut-1)||(i==boyut/2&&j==boyut-1))
+                        {
+                            printf(" ");
+                        }
+                        else if(i==0||j==0||i==boyut-1||(j==boyut-1&&i>boyut/2-1)||(i==boyut/2&&j>boyut/2-1))
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==9)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(j==0&&(i==boyut+1-boyut||i==0||i==boyut-1)||(i==boyut-1&&j==boyut-1)||(i==boyut/2&&j==boyut-1)||(i==boyut+1-boyut&&j==boyut-1))
+                        {
+                            printf(" ");
+                        }
+                        else if(i==boyut+1-boyut||i==0&&(j==boyut/2||j==boyut/2-1||j==boyut/2+1)||j==0||i==boyut-1||(j==boyut-1&&i>boyut/2-1)||(i==boyut/2&&j>boyut/2-1))
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==10)
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if(i==boyut/2||j==0||j==boyut-1)
+                        {
+
+                            printf("*");
+                        }
+
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==11)
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if(j==boyut/2)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==12)
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if(i==boyut+1-boyut)
+                        {
+                            printf(" ");
+                        }
+                        else if(j==boyut/2)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==13)
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if (i==boyut+1-boyut)
+                        {
+                            printf(" ");
+                        }
+                        else if((j==boyut/2&&i<boyut-1)||(j==boyut/2-1&&i==boyut-1)||(j==boyut/2-2&&i==boyut-1))
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==14)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if((j==i&&j>boyut/2-1)||(i+j==boyut-1&&j>boyut/2-1)||j==boyut/2-1)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==15)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(j==0 ||i==boyut-1)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==16)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(j==0||j==boyut-1||(j==i&&j<boyut/2)||(i+j==boyut-1&&j>boyut/2-1))
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==17)
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if(j==0 || j==boyut-1||  j==i)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==18)
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if(j==0&&(i==0||i==boyut-1)||j==boyut-1&&(i==0||i==boyut-1))
+                        {
+                            printf(" ");
+                        }
+                        else if(i==0||j==0||i==boyut-1||j==boyut-1)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==19)
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if(j==0&&(i==boyut+1-boyut||i==boyut-1)||(i==0&&j==0)||(i==0&&j==boyut-1)||j==boyut-1&&(i==0||i==boyut+1-boyut||i==boyut-1))
+                        {
+                            printf(" ");
+                        }
+                        else if(i==boyut+1-boyut||j==0||i==boyut-1||j==boyut-1||(j==boyut/2-1&&i==0)||(j==boyut/2+1&&i==0))
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==20)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(j==0||i==0||(j==boyut-1&&i<boyut/2)||i==boyut/2)
+                        {
+                            if(i==0&&(j==0||j==boyut-1)||(i==boyut/2 && j==boyut-1))
+                            {
+                                printf(" ");
+                            }
+                            else
+                                printf("*");
+                        }
+
+
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==21)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(j==0||i==0||(j==boyut-1&&i<boyut/2)||i==boyut/2||(i-boyut/2==j&&j<boyut/2+1))
+                        {
+                            if(i==0&&(j==0||j==boyut-1)||(i==boyut/2 && j==boyut-1))
+                            {
+                                printf(" ");
+                            }
+                            else
+                                printf("*");
+                        }
+
+
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==22)
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if (j==0&&(i==boyut/2||i==0)||j==boyut-1&&(i==boyut/2||i==boyut-1||i==0))
+                            printf(" ");
+                        else if(i==0||i==boyut-1||i==boyut/2||(j==0&&i<boyut/2)||(j==boyut-1&&i>boyut/2))
+                        {
+
+                            printf("*");
+                        }
+
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==23)
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if (j==0&&(i==boyut/2||i==0)||j==boyut-1&&(i==boyut/2-1||i==boyut-1||i==0))
+                            printf(" ");
+                        else if(i==0||i==boyut-2||(j==0&&i<boyut/2-1)||i==boyut/2-1||(j==boyut-1&&i>boyut/2)||(j==boyut-1&&i==boyut/2)||(i==boyut-1&&j==boyut/2))
+                        {
+
+                            printf("*");
+                        }
+
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==24)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(i==0||j==boyut/2)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==25)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(j==0 || i==boyut-1 || j==boyut-1)
+                        {
+                            if(i==boyut-1&&(j==0||j==boyut-1))
+                            {
+                                printf(" ");
+                            }
+                            else
+                                printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+
+                    printf("\n");
+
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==26)
+            {
+                for(i=0; i<boyut; i++)
+                {
+                    for(j=0; j<boyut; j++)
+                    {
+                        if((j==0&&i==0)||(j==boyut-1&&i==0))
+                        {
+                            printf(" ");
+                        }
+                        else if(j==0||i==boyut-1||j==boyut-1||(i==0&&j==boyut/2-1)||(i==0&&j==boyut/2+1))
+                        {
+                            printf("*");
+                        }
+
+
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==27)
+            {
+
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if((j==0&&i<boyut/2+1)||(j==boyut-1&&i<boyut/2)||j+boyut/2==i||i+j==boyut-1+boyut/2)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+
+            }
+            if(harf==28)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if((j==i&&j<boyut/2)||(i+j==boyut-1&&j>boyut/2-1)||(j==boyut/2&&i>boyut/2-1))
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+                printf("\n");
+                printf("\n");
+            }
+            if(harf==29)
+            {
+                for(i=0 ; i<boyut ; i++)
+                {
+                    for(j=0 ; j<boyut ; j++)
+                    {
+                        if(i==0||i==boyut-1||i+j==boyut-1)
+                        {
+                            printf("*");
+                        }
+                        else
+                            printf(" ");
+                    }
+                    printf("\n");
+                }
+
+            }
+
+        }
+
+
+    }
+       
+    return 0;
+}
